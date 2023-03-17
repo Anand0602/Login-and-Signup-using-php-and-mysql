@@ -1,0 +1,138 @@
+*{
+    margin:0%;
+    padding:0%;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url("https://images.unsplash.com/photo-1506452305024-9d3f02d1c9b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form{
+    display: flex;
+    text-align: center;
+    min-width: 66vh;
+    padding: 30px 5px;
+    margin-top: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    border-radius: 10px;
+    box-shadow: 5px 10px 25px 5px black;
+    backdrop-filter: blur(10px);
+}
+
+#input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px;
+}
+
+.input-box{
+    position: relative;
+    width: 250px;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    outline: none;
+    color: blue;
+    font-size: 1em;
+}
+
+.input-box span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: black;
+    text-transform: uppercase;
+}
+
+.input-box input:valid ~ span,
+.input-box input:focus ~ span{
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 15px;
+    background: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+    transition: 0.5s;
+}
+
+.input-box:nth-child(1) input:valid ~ span,
+.input-box:nth-child(1) input:focus ~ span{
+    background: #00dfc4;
+    color: #1d2b3a;
+    border-radius: 2px;
+}
+
+.input-box input:valid ,
+.input-box input:focus{
+    border: 1px solid #00dfc4;
+}
+
+#login_btn{
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+}
+
+#login_btn button{
+    width: 60%;
+    height: 35px;
+    border-radius: 5px;
+    border: hidden;
+    cursor: pointer;
+    box-shadow: 0px 1px 10px 3px;
+}
+
+#division{
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    padding: 0px;
+    justify-content: space-evenly;
+}
+
+#options{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 0%;
+}
+
+#options a{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width:1920px){
+    form{
+        height: 80vh;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    #input{
+        padding: 80px;
+        margin-bottom: 80px;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <title>Signup</title>
+</head>
+
+<body>
+    <form action="sign.php" method="post">
+        <div class="logo">
+            <h2>SIGNUP</h2>
+        </div>
+        <div class="container" id="input">
+            <div class="input-box" id="NAME">
+                <input type="text" name="person_name" id="NAME" required>
+                <span>NAME</span>
+            </div>
+            <div class="input-box" id="uid">
+                <input type="text" name="username" id="USERNAME" required>
+                <span>USERNAME</span>
+            </div>
+            <div class="input-box" id="email">
+                <input type="text" name="email" id="EMAIL" required>
+                <span>EMAIL</span>
+            </div>
+            <div class="input-box" id="password">
+                <input type="password" name="psw" id="upass" required>
+                <span>PASSWORD</span>
+            </div>
+            <!-- <div class="input-box" id="rpsw">
+                <input type="confirm password " name="" id="repass" required>
+                <span>CONFIRM PASSWORDS</span>
+            </div> -->
+        </div>
+        <div class="container" id="login_btn">
+            <button type="submit">Login</button>
+        </div>
+        <div class="container" id="division">
+            <hr class="divider_line" style="margin: 24px 20px; width:30%;">
+            <div>Or</div>
+            <hr class="divider_line" style="margin:24px 20px; width: 30%;">
+        </div>
+        <div class="container" id="options">
+            <a class="fa-brands fa-google fa-2x"></a>
+
+            <a class="fa-brands fa-facebook-f fa-2x"></a>
+
+            <a class="fa-brands fa-twitter fa-2x"></a>
+        </div>
+    </form>
+</body>
+</html>
