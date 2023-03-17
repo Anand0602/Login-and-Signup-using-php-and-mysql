@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+
+    <title>Animation</title>
+</head>
+<body>    
+    <form action="login.php" method="post">
+        <div class="logo">
+            <h2>LOGIN</h2>
+        </div>
+        <div class="container" id="input">
+            <div class="container" id="uid">
+                <input type="text" name="username" id="uname" required>
+                <span>Username</span>
+            </div>
+            <div class="container" id="psw">
+                <input type="password" name="psw" id="upass" required>
+                <span>Password</span>
+            </div>
+        </div>
+        <div class="container" id="remember_user">
+            <label for=""><input type="checkbox" name="" id = "remember_me"> Remember me</label>
+            <span id="forgot"><a href="#" target="_blank" style="text-decoration: none; color: white">Forget password</a></span>
+        </div>
+
+        <div class="container" id="login_btn">
+            <button type="submit" style="width: 60%; height: 35px; border-radius: 5px; border: hidden; cursor: pointer; box-shadow: 0px 1px 10px 3px;">Login</button>
+        </div>
+
+        <div class="container" id="signup">
+            <span id="sign">Not registered yet? &emsp;<a href="../signup/signup.html">Create an Account</a></span>
+        </div>
+        <div class="container" id="division">
+            <hr class="divider_line" style="margin: 24px 20px; width: 35%;">
+            <div>Or</div>
+            <hr class="divider_line" style="margin: 24px 20px; width: 35%;">
+        </div>
+        <div class="container" id="options">
+            <a href="https://accounts.google.com/v3/signin/identifier?dsh=S1762067922%3A1675587225470837&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AWnogHfGyOPmrQjW76rqTOmdqVrqzfOPfauBOVvlfBqck-MJmyFoxKv4d1OqKOCMLKk2zsWupfBSJQ" target="_blank" class="fa-brands fa-google fa-2x"></a>
+            <a href="https://www.facebook.com/login/" target="_blank" class="fa-brands fa-facebook fa-2x"></a>
+            <a href="https://twitter.com/i/flow/login?" target="_blank" class="fa-brands fa-twitter fa-2x"></a>
+        </div>
+    </form>
+</body>
+</html>
